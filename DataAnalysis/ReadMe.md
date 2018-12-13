@@ -11,7 +11,6 @@ Python3数据分析-2018黑马
 * *matplotlib module*
 ----------------------
 最流行Python的底层绘图库<br>
-matplotlib.org/gallery
 基本要点:<br>
 axis轴:xy坐标轴
 默认不支持中文，使用fc-list :lang=zh查看支持字体<br>
@@ -23,6 +22,7 @@ matplotlib.rc,查看源码<br>
 
 *pyplot*
 ---------
+[画图图例](matplotlib.org/gallery/)
 python function|用法
 ----|--------|
 from matplotlib import pyplot as plt | #导入pyplot<br>
