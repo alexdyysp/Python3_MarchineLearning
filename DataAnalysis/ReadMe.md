@@ -22,7 +22,7 @@ matplotlib.rc,查看源码<br>
 
 *pyplot*
 ---------
-[画图图例](matplotlib.org/gallery/)
+[matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)
 python function|用法
 ----|--------|
 from matplotlib import pyplot as plt | #导入pyplot<br>
