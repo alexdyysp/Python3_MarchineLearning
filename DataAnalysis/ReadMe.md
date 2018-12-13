@@ -21,4 +21,7 @@ plt.plot(x,y)     #传入x和y<br>
 plt.show()        #展示图形<br>
 plt.figure(figsize,dpi)   #设置图片大小，实例化大小参数figsize,输入dip像素点参数使图像更清晰 <br>
 plt.savefig("path")       #可以保存为svg矢量图格式，放大不会有锯齿 <br>
-plt.xticks(range())  plt.yticks(range())        #调整x,y轴刻度，range(start,end,interval) <br>
+plt.xticks(range(),xticks_label,rotation)  
+plt.yticks(range())        #调整x,y轴刻度，range(start,end,interval) <br>
+_xticks_labels = ["hello,{}".format(i) for i in x]   #显示hello,i<br>
+
