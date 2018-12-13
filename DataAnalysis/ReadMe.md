@@ -20,6 +20,7 @@ matplotlib.rc("font",**font)<br>
 
 *pyplot*
 ---------
+python function|用法
 ----|--------|
 from matplotlib import pyplot as plt | #导入pyplot<br>
 matplotlib.rc("font",**font)  |  #enable 中文<br>
