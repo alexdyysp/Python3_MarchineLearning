@@ -15,8 +15,10 @@ Python3数据分析-2018黑马
 axis轴:xy坐标轴
 默认不支持中文，使用fc-list :lang=zh查看支持字体<br>
 matplotlib.rc,查看源码<br>
-font = {'family':'MicroSoft Yahei','weight':'bold','size':'larger'}<br>
-matplotlib.rc("font",**font)<br>
+1. font = {'family':'MicroSoft Yahei','weight':'bold','size':'larger'}<br>
+   matplotlib.rc("font",**font)<br>
+2. my_font = font_manager.FontProperties(fname="/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc") <br>
+   fontproperties=my_font<br>
 
 *pyplot*
 ---------
@@ -30,5 +32,7 @@ plt.figure(figsize,dpi)  | #设置图片大小，实例化大小参数figsize,�
 plt.savefig("path")      | #可以保存为svg矢量图格式，放大不会有锯齿 <br>
 plt.xticks(range(),xticks_label,rotation，fontproperties=my_font)|  #range(start,end,interval),label"hello,{}",rotation=degree，font字体文件<br>
 plt.yticks(range())    |    #调整x,y轴刻度， <br>
-_xticks_labels = ["hello,{}".format(i) for i in x]  | #显示hello,i<br>
+plt.title("" ,fontproperties=) | 显示title标题
+
+
 
