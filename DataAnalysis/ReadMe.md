@@ -24,7 +24,7 @@ matplotlib.rc,查看源码<br>
 ---------
 [matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)<br>
 python function|用法
-----|--------|
+----|------
 from matplotlib import pyplot as plt | #导入pyplot<br>
 matplotlib.rc("font",**font)  |  #enable 中文<br>
 plt.plot(x,y,label,color,linestyle,linewidth,alpha)  |   #传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
