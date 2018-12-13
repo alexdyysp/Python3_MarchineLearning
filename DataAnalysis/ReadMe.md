@@ -14,8 +14,8 @@ Python3数据分析-2018黑马
 基本要点:<br>
 axis轴:xy坐标轴
 
-pyplot
-------
+*pyplot*
+---------
 from matplotlib import pyplot as plt  #导入pyplot<br>
 plt.plot(x,y)     #传入x和y<br>
 plt.show()        #展示图形<br>
