@@ -24,10 +24,12 @@ matplotlib.rc,查看源码<br>
 ---------
 想查看更多图形，点击下面链接<br>
 [matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)<br>
-还有ECHARTS前端框架,js效果]
-plotly
-[ployly.py](https://plotly.ly/python/)
-seaborn
+
+[还有ECHARTS前端框架,js效果](https://github.com/apache/incubator-echarts)<by>
+
+[ployly.py，在后端直接绘图不用传给前端](https://plotly.ly/python/)<br>
+
+seaborn<br>
 
 function|用法
 ------|------
