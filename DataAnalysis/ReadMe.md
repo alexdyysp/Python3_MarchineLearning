@@ -41,5 +41,7 @@ function|展示图形类型
 ------|------
 plt.plot(x,y,label,color,linestyle,linewidth,alpha)  |   折线图，传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
 plt.scatter()     |  散点图<br>
+plt.bar()   |  条形图<br>
+plt.hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
 
