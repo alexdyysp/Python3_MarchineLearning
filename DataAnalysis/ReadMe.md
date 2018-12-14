@@ -22,7 +22,12 @@ matplotlib.rc,查看源码<br>
 
 *pyplot*
 ---------
+想查看更多图形，点击下面链接<br>
 [matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)<br>
+还有ECHARTS前端框架,js效果]
+plotly
+[ployly.py](https://plotly.ly/python/)
+seaborn
 
 function|用法
 ------|------
