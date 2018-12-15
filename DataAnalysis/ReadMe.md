@@ -55,6 +55,8 @@ plt.hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 *numpy*
 ---------
 专门用于处理数值形数据
+概念:
+axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示
 
 function|用法
 ------|------
@@ -64,3 +66,4 @@ numpy.reshape()   |  改变数组形状，但是原地变化，不改变原数�
 numpy.flatten()<br>numpy.reshape(1,n)  |  数组一维化
 array+-*/value |  给数组全体进行四则运算
 numpy.arrange(a,b).reshape(x,y)  |  生成从a到b，形状为x,y维的数组
+numpy.loadtxt(frame, dtype, delimiter, skiprows, usecols, unpack) |  frame文件，dtype数据类型，delimiter分割字符串，skiprows跳过行，usecols读取指定列，unpack值为Ture写入不同数组变量/Flase则写入一个数组变量
