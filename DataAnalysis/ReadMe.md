@@ -52,3 +52,12 @@ plt.bar()   |  条形图<br>
 plt.hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
 
+*numpy*
+---------
+
+function|用法
+------|------
+numpy.array([])   |  新建数组
+numpy.shape()  |  数组形状
+numpy.reshape()   |  改变数组形状，但是原地变化，不改变原数组
+numpy.flatten()<br>numpy.reshape(1,n)  |  数组一维化
