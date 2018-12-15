@@ -33,6 +33,7 @@ seaborn<br>
 
 function|用法
 ------|------
+图形描述函数
 from matplotlib import pyplot as plt | #导入pyplot<br>
 matplotlib.rc("font",**font)  |  #enable 中文<br>
 plt.show()      |  #展示图形<br>
@@ -43,9 +44,7 @@ plt.yticks(range())    |    #调整x,y轴刻度， <br>
 plt.title("" ,fontproperties=) | 显示title标题
 plt.legend(prop) | 添加图例，prop字体，从plot函数的label中抽取图例内容
 plt.grid(alpha=0.5)  | 设置网格，alpha透明度
-
-function|展示图形类型
-------|------
+展示图形类型函数
 plt.plot(x,y,label,color,linestyle,linewidth,alpha)  |   折线图，传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
 plt.scatter()     |  散点图<br>
 plt.bar()   |  条形图<br>
@@ -60,6 +59,7 @@ axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示
 
 function|用法
 ------|------
+基本用法
 numpy.array([])   |  新建数组
 numpy.shape()  |  数组形状
 numpy.reshape()   |  改变数组形状，但是原地变化，不改变原数组
@@ -68,9 +68,11 @@ array+-*/value |  给数组全体进行四则运算
 numpy.arrange(a,b).reshape(x,y)  |  生成从a到b，形状为x,y维的数组
 numpy.loadtxt(frame, dtype, delimiter, skiprows, usecols, unpack) |  frame文件，dtype数据类型，delimiter分割字符串，skiprows跳过行，usecols读取指定列，unpack值为Ture写入不同数组变量/Flase则写入一个数组变量
 numpy.transpose()<br>   array.T<br> array.swapaxes(1,0)<br> |  转置数组,行列变换
-- 切片与索引 
+切片与索引 
 array[a:b]<br>array[n]<br>array[[a,b,c]]<br> |  取连续a+1到b+1行<br>取第n+1行<br>取不连续多行[a+1,b+1,c+1]<br>
 array[:, a:b]<br>array[:, n]<br>array[:, [a,b,c]]<br> |  取连续a+1到b+1列<br>取第n+1列<br>取不连续列[a+1,b+1,c+1]<br>
 array[a:b, c:d]   |  取a+1到b+1行，取c+1到d+1列，取行列交叉点位置
 array[[a,b,c],[d,e,f]] |   取多个不相邻点，[a+1,d+1],[b+1,e+1],[c+1,f+1]
+array[array>value]   |  取出array中数值大于value的数值
+numpy.where(array<value,a,b)  |  将array中小于value的数值替换为a,大于的换位b
 
