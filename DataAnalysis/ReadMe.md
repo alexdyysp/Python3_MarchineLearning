@@ -22,7 +22,7 @@ matplotlib.rc,查看源码<br>
 
 *pyplot*
 ---------
-想查看更多图形，点击下面链接<br>
+想查看更多绘制图形，点击下面链接<br>
 [matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)<br>
 
 [还有ECHARTS前端框架,js效果](https://github.com/apache/incubator-echarts)<by>
@@ -54,6 +54,7 @@ plt.hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
 *numpy*
 ---------
+专门用于处理数值形数据
 
 function|用法
 ------|------
