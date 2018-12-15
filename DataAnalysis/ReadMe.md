@@ -67,3 +67,7 @@ numpy.flatten()<br>numpy.reshape(1,n)  |  数组一维化
 array+-*/value |  给数组全体进行四则运算
 numpy.arrange(a,b).reshape(x,y)  |  生成从a到b，形状为x,y维的数组
 numpy.loadtxt(frame, dtype, delimiter, skiprows, usecols, unpack) |  frame文件，dtype数据类型，delimiter分割字符串，skiprows跳过行，usecols读取指定列，unpack值为Ture写入不同数组变量/Flase则写入一个数组变量
+numpy.transpose()<br>   array.T<br> array.swapaxes(1,0)<br> |  转置数组,行列变换
+array[a:b]<br>array[n]<br>array[[a,b,c]]<br> |  取连续a到b行<br>取第n行<br>取不连续多行[a,b,c]<br>
+array[a:b,:]<br>array[n,:]<br>array[[a,b,c],:]<br> |  取连续a到b列<br>取第n列<br>取不连续列[a,b,c]<br>
+
