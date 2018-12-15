@@ -61,3 +61,5 @@ numpy.array([])   |  新建数组
 numpy.shape()  |  数组形状
 numpy.reshape()   |  改变数组形状，但是原地变化，不改变原数组
 numpy.flatten()<br>numpy.reshape(1,n)  |  数组一维化
+array+-*/value |  给数组全体进行四则运算
+numpy.arrange(a,b).reshape(x,y)  |  生成从a到b，形状为x,y维的数组
