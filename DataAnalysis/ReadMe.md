@@ -36,19 +36,19 @@ function|用法
 图形描述函数
 from matplotlib import pyplot as plt | #导入pyplot<br>
 matplotlib.rc("font",**font)  |  #enable 中文<br>
-plt.show()      |  #展示图形<br>
-plt.figure(figsize,dpi)  | #设置图片大小，实例化大小参数figsize,输入dip像素点参数使图像更清晰 <br>
-plt.savefig("path")      | #可以保存为svg矢量图格式，放大不会有锯齿 <br>
-plt.xticks(range(),xticks_label,rotation，fontproperties=my_font)|  #range(start,end,interval),label"hello,{}",rotation=degree，font字体文件<br>
-plt.yticks(range())    |    #调整x,y轴刻度， <br>
-plt.title("" ,fontproperties=) | 显示title标题
-plt.legend(prop) | 添加图例，prop字体，从plot函数的label中抽取图例内容
-plt.grid(alpha=0.5)  | 设置网格，alpha透明度
+.show()      |  #展示图形<br>
+.figure(figsize,dpi)  | #设置图片大小，实例化大小参数figsize,输入dip像素点参数使图像更清晰 <br>
+.savefig("path")      | #可以保存为svg矢量图格式，放大不会有锯齿 <br>
+.xticks(range(),xticks_label,rotation，fontproperties=my_font)|  range(start,end,interval),label"hello,{}",rotation=degree，font字体文件<br>
+.yticks(range())    |    #调整x,y轴刻度， <br>
+.title("" ,fontproperties=) | 显示title标题
+.legend(prop) | 添加图例，prop字体，从plot函数的label中抽取图例内容
+.grid(alpha=0.5)  | 设置网格，alpha透明度
 展示图形类型函数
-plt.plot(x,y,label,color,linestyle,linewidth,alpha)  |   折线图，传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
-plt.scatter()     |  散点图<br>
-plt.bar()   |  条形图<br>
-plt.hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
+.plot(x,y,label,color,linestyle,linewidth,alpha)  |   折线图，传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
+.scatter()     |  散点图<br>
+.bar()   |  条形图<br>
+.hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
 
 *numpy*
@@ -60,14 +60,22 @@ axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示
 function|用法
 ------|------
 基本用法
-numpy.array([])   |  新建数组
-numpy.shape()  |  数组形状
-numpy.reshape()   |  改变数组形状，但是原地变化，不改变原数组
-numpy.flatten()<br>numpy.reshape(1,n)  |  数组一维化
+.array([])   |  新建数组
+.shape()  |  数组形状
+.reshape()   |  改变数组形状，但是原地变化，不改变原数组
+.flatten()<br>numpy.reshape(1,n)  |  数组一维化
+.arrange(a,b).reshape(x,y)  |  生成从a到b，形状为x,y维的数组
+.loadtxt(frame, dtype, delimiter, skiprows, usecols, unpack) |  加载文件书数据，frame文件，dtype数据类型，delimiter分割字符串，skiprows跳过行，usecols读取指定列，unpack值为Ture写入不同数组变量/Flase则写入一个数组变量
+.transpose()<br>   array.T<br> array.swapaxes(1,0)<br> |  转置数组,行列变换
+.argmax(t, axis=0)<br>.argmin(t, axis=1) |  取最大值最小值位置，axis=0按行方向,axis=1按列方向
+.eye(n)   |  新建对角线为1的矩阵
+生成随机数
+.random.rand(d0,d1,...,dn)  |  创建d0-dn维度的*均匀*分布随机数据库，浮点数(0,1)
+.random.randn(d0,d1,...,dn)  |  创建d0-dn维度的*标准正态*分布随机数据库，average=0,标准差s=1
+.random.randint(low,high,(shape)) |  给定上限范围选取随机数整数，(low,high),size=shape
+直接数组操作
 array+-*/value |  给数组全体进行四则运算
-numpy.arrange(a,b).reshape(x,y)  |  生成从a到b，形状为x,y维的数组
-numpy.loadtxt(frame, dtype, delimiter, skiprows, usecols, unpack) |  frame文件，dtype数据类型，delimiter分割字符串，skiprows跳过行，usecols读取指定列，unpack值为Ture写入不同数组变量/Flase则写入一个数组变量
-numpy.transpose()<br>   array.T<br> array.swapaxes(1,0)<br> |  转置数组,行列变换
+array.astype(elementype)   |  array转换类型，默认为float
 切片与索引 
 array[a:b]<br>array[n]<br>array[[a,b,c]]<br> |  取连续a+1到b+1行<br>取第n+1行<br>取不连续多行[a+1,b+1,c+1]<br>
 array[:, a:b]<br>array[:, n]<br>array[:, [a,b,c]]<br> |  取连续a+1到b+1列<br>取第n+1列<br>取不连续列[a+1,b+1,c+1]<br>
@@ -75,4 +83,9 @@ array[a:b, c:d]   |  取a+1到b+1行，取c+1到d+1列，取行列交叉点位�
 array[[a,b,c],[d,e,f]] |   取多个不相邻点，[a+1,d+1],[b+1,e+1],[c+1,f+1]
 array[array>value]   |  取出array中数值大于value的数值
 numpy.where(array<value,a,b)  |  将array中小于value的数值替换为a,大于的换位b
-
+数组拼接
+numpy.vstack((a,b))  |  竖直拼接(vertically)
+numpy.hstack((a,b))  |  水平拼接(horizontally)
+行列交换
+array[[a,b],:] |  行交换
+array[:,[a,b]] |  列交换
