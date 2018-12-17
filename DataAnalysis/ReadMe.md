@@ -34,13 +34,13 @@ seaborn<br>
 function|用法
 ------|------
 图形描述函数
-from matplotlib import pyplot as plt | #导入pyplot<br>
-matplotlib.rc("font",**font)  |  #enable 中文<br>
-.show()      |  #展示图形<br>
-.figure(figsize,dpi)  | #设置图片大小，实例化大小参数figsize,输入dip像素点参数使图像更清晰 <br>
-.savefig("path")      | #可以保存为svg矢量图格式，放大不会有锯齿 <br>
+from matplotlib import pyplot as plt | 导入pyplot<
+matplotlib.rc("font",**font)  |  enable 中文
+.show()      |  展示图形<br>
+.figure(figsize,dpi)  | 设置图片大小，实例化大小参数figsize,输入dip像素点参数使图像更清晰 <br>
+.savefig("path")      | 可以保存为svg矢量图格式，放大不会有锯齿 <br>
 .xticks(range(),xticks_label,rotation，fontproperties=my_font)|  range(start,end,interval),label"hello,{}",rotation=degree，font字体文件<br>
-.yticks(range())    |    #调整x,y轴刻度， <br>
+.yticks(range())    |    调整x,y轴刻度， <br>
 .title("" ,fontproperties=) | 显示title标题
 .legend(prop) | 添加图例，prop字体，从plot函数的label中抽取图例内容
 .grid(alpha=0.5)  | 设置网格，alpha透明度
@@ -51,8 +51,8 @@ matplotlib.rc("font",**font)  |  #enable 中文<br>
 .hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
 
-*numpy*
----------
+* *numpy Module*
+-----------------
 专门用于处理数值形数据
 概念:
 axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示
@@ -73,6 +73,7 @@ function|用法
 .random.rand(d0,d1,...,dn)  |  创建d0-dn维度的*均匀*分布随机数据库，浮点数(0,1)
 .random.randn(d0,d1,...,dn)  |  创建d0-dn维度的*标准正态*分布随机数据库，average=0,标准差s=1
 .random.randint(low,high,(shape)) |  给定上限范围选取随机数整数，(low,high),size=shape
+.random.seed(n)   |  随机种子，给定n个随机值，可以让后续每次生成相应的随机数
 直接数组操作
 array+-*/value |  给数组全体进行四则运算
 array.astype(elementype)   |  array转换类型，默认为float
@@ -89,3 +90,7 @@ numpy.hstack((a,b))  |  水平拼接(horizontally)
 行列交换
 array[[a,b],:] |  行交换
 array[:,[a,b]] |  列交换
+copy and review
+a = b | 完全不复制，a与b相互影响
+a = b[:] |  视图操作，切片创建新对象a，a数据完全由b保管，两个数据变化是一致的
+a = b.copy()   |  轻拷贝，ab不相互影响
