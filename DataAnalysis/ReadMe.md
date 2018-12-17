@@ -33,7 +33,7 @@ seaborn<br>
 
 function|用法
 ------|------
-图形描述函数
+*图形描述函数*
 from matplotlib import pyplot as plt | 导入pyplot<
 matplotlib.rc("font",**font)  |  enable 中文
 .show()      |  展示图形<br>
@@ -44,7 +44,7 @@ matplotlib.rc("font",**font)  |  enable 中文
 .title("" ,fontproperties=) | 显示title标题
 .legend(prop) | 添加图例，prop字体，从plot函数的label中抽取图例内容
 .grid(alpha=0.5)  | 设置网格，alpha透明度
-展示图形类型函数
+*展示图形类型函数*
 .plot(x,y,label,color,linestyle,linewidth,alpha)  |   折线图，传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
 .scatter()     |  散点图<br>
 .bar()   |  条形图<br>
@@ -59,7 +59,7 @@ axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示
 
 function|用法
 ------|------
-基本用法
+*基本用法*
 .array([])   |  新建数组
 .shape()  |  数组形状
 .reshape()   |  改变数组形状，但是原地变化，不改变原数组
@@ -69,28 +69,33 @@ function|用法
 .transpose()<br>   array.T<br> array.swapaxes(1,0)<br> |  转置数组,行列变换
 .argmax(t, axis=0)<br>.argmin(t, axis=1) |  取最大值最小值位置，axis=0按行方向,axis=1按列方向
 .eye(n)   |  新建对角线为1的矩阵
-生成随机数
+*生成随机数*
 .random.rand(d0,d1,...,dn)  |  创建d0-dn维度的*均匀*分布随机数据库，浮点数(0,1)
 .random.randn(d0,d1,...,dn)  |  创建d0-dn维度的*标准正态*分布随机数据库，average=0,标准差s=1
 .random.randint(low,high,(shape)) |  给定上限范围选取随机数整数，(low,high),size=shape
 .random.seed(n)   |  随机种子，给定n个随机值，可以让后续每次生成相应的随机数
-直接数组操作
+*直接数组操作*
 array+-*/value |  给数组全体进行四则运算
 array.astype(elementype)   |  array转换类型，默认为float
-切片与索引 
+*切片与索引 *
 array[a:b]<br>array[n]<br>array[[a,b,c]]<br> |  取连续a+1到b+1行<br>取第n+1行<br>取不连续多行[a+1,b+1,c+1]<br>
 array[:, a:b]<br>array[:, n]<br>array[:, [a,b,c]]<br> |  取连续a+1到b+1列<br>取第n+1列<br>取不连续列[a+1,b+1,c+1]<br>
 array[a:b, c:d]   |  取a+1到b+1行，取c+1到d+1列，取行列交叉点位置
 array[[a,b,c],[d,e,f]] |   取多个不相邻点，[a+1,d+1],[b+1,e+1],[c+1,f+1]
 array[array>value]   |  取出array中数值大于value的数值
 numpy.where(array<value,a,b)  |  将array中小于value的数值替换为a,大于的换位b
-数组拼接
+*数组拼接*
 numpy.vstack((a,b))  |  竖直拼接(vertically)
 numpy.hstack((a,b))  |  水平拼接(horizontally)
-行列交换
+*行列交换*
 array[[a,b],:] |  行交换
 array[:,[a,b]] |  列交换
-copy and review
+*copy and review*
 a = b | 完全不复制，a与b相互影响
 a = b[:] |  视图操作，切片创建新对象a，a数据完全由b保管，两个数据变化是一致的
 a = b.copy()   |  轻拷贝，ab不相互影响
+*nan & inf*
+.isnan(num)<br>.isnan(array)   |  求num是否为nan<br>返回bool型数组在nan位置标True
+
+* *pandas*
+pandas可以处理字符串和时间序列等数据
