@@ -97,5 +97,31 @@ a = b.copy()   |  轻拷贝，ab不相互影响
 *nan & inf*
 .isnan(num)<br>.isnan(array)   |  求num是否为nan<br>返回bool型数组在nan位置标True
 
-* *pandas*
+* *pandas Module*
 pandas可以处理字符串和时间序列等数据
+(pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]
+import panda as pd   #panda module导入<br>
+
+*Series序列*
+Series对象本质上由两个数组构成，一个构成对象的键(index)，一个构成对象的值(value)，index->value<br>
+常配合string一起使用
+
+function|用法
+------|------
+基本用法
+series.index   |  返回series的索引序列
+series.values  |  返回series的数值序列
+series创建
+.Series([array], index = list(""))  | 创建array数组的索引序列, index用于指定索引
+series切片&索引
+s[start:end:step] |  直接传入起始结束步长
+s[s>num] |  返回序列中大于num的部分
+s["index1","index2"] | 直接用索引表索引
+.where(condition) |  where方法，返回符合条件的序列部分
+
+*read读取外部数据*
+function|用法
+------|------
+panda.read_csv("filepath") |  读取出的数据类型为DataFrame
+
+*DataFrame*
