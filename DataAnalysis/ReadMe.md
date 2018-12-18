@@ -34,7 +34,7 @@ seaborn<br>
 function|用法
 ------|------
 *图形描述函数*
-from matplotlib import pyplot as plt | 导入pyplot<
+from matplotlib import pyplot as plt | 导入pyplot
 matplotlib.rc("font",**font)  |  enable 中文
 .show()      |  展示图形<br>
 .figure(figsize,dpi)  | 设置图片大小，实例化大小参数figsize,输入dip像素点参数使图像更清晰 <br>
@@ -53,9 +53,9 @@ matplotlib.rc("font",**font)  |  enable 中文
 
 * *numpy Module*
 -----------------
-专门用于处理数值形数据
-概念:
-axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示
+专门用于处理数值形数据<br>
+概念:<br>
+axis 轴：在numpy中可以理解为方向，用数字0,1,2....数字表示<br>
 
 function|用法
 ------|------
@@ -99,8 +99,8 @@ a = b.copy()   |  轻拷贝，ab不相互影响
 
 
 * *pandas Module*
-pandas可以处理字符串和时间序列等数据
-(pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]
+pandas可以处理字符串和时间序列等数据<br>
+(pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]<br>
 import panda as pd   #panda module导入<br>
 
 *Series序列*
@@ -121,6 +121,7 @@ s["index1","index2"] | 直接用索引表索引
 .where(condition) |  where方法，返回符合条件的序列部分<br>
 
 *read读取外部数据*
+
 function|用法
 ------|------
 panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
