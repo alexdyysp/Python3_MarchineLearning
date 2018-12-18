@@ -95,7 +95,8 @@ a = b | 完全不复制，a与b相互影响
 a = b[:] |  视图操作，切片创建新对象a，a数据完全由b保管，两个数据变化是一致的
 a = b.copy()   |  轻拷贝，ab不相互影响
 *nan & inf*
-.isnan(num)<br>.isnan(array)   |  求num是否为nan<br>返回bool型数组在nan位置标True
+.isnan(num)<br>.isnan(array)   |  求num是否为nan<br>返回bool型数组在nan位置标True<br>
+
 
 * *pandas Module*
 pandas可以处理字符串和时间序列等数据
@@ -104,7 +105,7 @@ import panda as pd   #panda module导入<br>
 
 *Series序列*
 Series对象本质上由两个数组构成，一个构成对象的键(index)，一个构成对象的值(value)，index->value<br>
-常配合string一起使用
+常配合string一起使用<br>
 
 function|用法
 ------|------
@@ -117,11 +118,11 @@ series切片&索引
 s[start:end:step] |  直接传入起始结束步长
 s[s>num] |  返回序列中大于num的部分
 s["index1","index2"] | 直接用索引表索引
-.where(condition) |  where方法，返回符合条件的序列部分
+.where(condition) |  where方法，返回符合条件的序列部分<br>
 
 *read读取外部数据*
 function|用法
 ------|------
-panda.read_csv("filepath") |  读取出的数据类型为DataFrame
+panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
 
 *DataFrame*
