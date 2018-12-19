@@ -3,11 +3,12 @@ Python3数据分析-2018黑马
 数据分析
 -------
 什么是数据分析？<br>
-数据分析是用适当方法对收集来的大量数据进行分析，帮助人们做出判断，以便采取适当行动。
+数据分析是用适当方法对收集来的大量数据进行分析，帮助人们做出判断，以便采取适当行动<br>
 
 数据分析的流程?<br>
 提出问题-准备数据-分析数据-获得结论-成果可视化
-
+  
+  
 * *matplotlib module*
 ----------------------
 最流行Python的底层绘图库<br>
@@ -19,7 +20,8 @@ matplotlib.rc,查看源码<br>
    matplotlib.rc("font",**font)<br>
 2. my_font = font_manager.FontProperties(fname="/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc") <br>
    fontproperties=my_font<br>
-
+  
+  
 *pyplot*
 ---------
 想查看更多绘制图形，点击下面链接<br>
@@ -50,7 +52,8 @@ matplotlib.rc("font",**font)  |  enable 中文
 .bar()   |  条形图<br>
 .hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
-
+  
+  
 * *numpy Module*
 -----------------
 专门用于处理数值形数据<br>
@@ -96,14 +99,15 @@ a = b[:] |  视图操作，切片创建新对象a，a数据完全由b保管，�
 a = b.copy()   |  轻拷贝，ab不相互影响
 *nan & inf*
 .isnan(num)<br>.isnan(array)   |  求num是否为nan<br>返回bool型数组在nan位置标True<br>
-
-
+  
+  
 * *pandas Module*
 pandas可以处理字符串和时间序列等数据<br>
 (pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]<br>
 import panda as pd   #panda module导入<br>
-
-*Series序列*
+  
+  
+1. *Series序列*
 Series对象本质上由两个数组构成，一个构成对象的键(index)，一个构成对象的值(value)，index->value<br>
 常配合string一起使用<br>
 
@@ -119,11 +123,16 @@ s[start:end:step] |  直接传入起始结束步长
 s[s>num] |  返回序列中大于num的部分
 s["index1","index2"] | 直接用索引表索引
 .where(condition) |  where方法，返回符合条件的序列部分<br>
-
-*read读取外部数据*
-
+  
+  
+2. *read读取外部数据*
 function|用法
 ------|------
 panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
-
-*DataFrame*
+  
+  
+3. *DataFrame*
+DataFrame二维数组对象，Series容器，有横竖轴，支持行索引&列索引<br>
+function|用法
+------|------
+.DataFrame(array, index=list(""), columns=list(""))   |  创建DataFrame对象索引, value=array, index行索引, colums列索引
