@@ -106,6 +106,15 @@ pandas可以处理字符串和时间序列等数据<br>
 (pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]<br>
 import panda as pd   #panda module导入<br>
   
+*字符串方法*
+function|用法
+------|------
+.contains() | 返回表示字符串是否含有指定模式的布尔型数组
+.len()  | 返回计算各组字符串长度
+.lower()<br>.upper()  | 转换大小写
+.replace(a, b)  | 用指定字符串b替换找到的模式a
+.split("char")  | 根据分隔符char或正则表达式对字符串进行拆分
+  
   
 1. *Series序列*
 Series对象本质上由两个数组构成，一个构成对象的键(index)，一个构成对象的值(value)，index->value<br>
@@ -134,6 +143,7 @@ panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
   
 3. *DataFrame*
 DataFrame二维数组对象，Series容器，有横竖轴，支持行索引&列索引<br>  
+一般用df指DataFrame型数据<br>  
 
 function|用法
 ------|------
@@ -158,3 +168,10 @@ df[a,b]["title"]  |同时行列索引操作
 *loc优化选择方式(返回Series数据类型)*
 df.loc(["title"])  |  标签索引行数据 ex:df.loc["A", ["B", "C"]]
 df.iloc(a,b) |  位置获取行数据 
+*布尔索引*
+df[df["title"]><=condition] | 取出符合条件值的df行列
+df[(condition)&(condition)] | 多个条件重合用&
+df["info"].str.split("/").tolist()  | 将"丁黑/孙俪/陈晓/何润东/剧情/古装/2017-08-30(中国大陆)"根据"/"做切割<br>.tolist把列表变成表格
+
+4. *缺失数据处理*
+.isnull(df)<br>.notnull(df) | 判断数据是否为NaN
