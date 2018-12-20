@@ -174,4 +174,12 @@ df[(condition)&(condition)] | 多个条件重合用&
 df["info"].str.split("/").tolist()  | 将"丁黑/孙俪/陈晓/何润东/剧情/古装/2017-08-30(中国大陆)"根据"/"做切割<br>.tolist把列表变成表格
 
 4. *缺失数据处理*
+数据缺失通常有两种情况：空/NaN/None和0<br>
+并不是所有的0都需要处理<br>
+计算平均值等情况，NaN不参与计算，但是0会<br>
+  
+function|用法
+------|------
 .isnull(df)<br>.notnull(df) | 判断数据是否为NaN
+dropna(axis=0,how='any',inplace=False) |  删除Nan所在行列
+array.fillna(array.mean())<br>array.fillna(array.median())<br>array.fillna(0) | 填充数据，平均值/中位数/0
