@@ -132,10 +132,10 @@ panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
   
   
 3. *DataFrame*
-DataFrame二维数组对象，Series容器，有横竖轴，支持行索引&列索引<br>
+DataFrame二维数组对象，Series容器，有横竖轴，支持行索引&列索引<br>  
+
 function|用法
 ------|------
-*函数基本用法*
 .DataFrame(array, index=list(""), columns=list(""))   |  创建DataFrame对象索引, value=array, index行索引, colums列索引
 *DataFrame对象基础属性*
 df.shape  | 返回行数列数
