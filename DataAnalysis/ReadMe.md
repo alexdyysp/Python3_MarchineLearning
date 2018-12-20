@@ -151,3 +151,10 @@ df.info() | 相关信息概览：行数，列数，列索引，列非空值个�
 df.describe() | 快速综合统计结果：计数，均值，标准差，最大值，四分位数，最小值(只能统计数值型,int/folat)
 *DataFrame排序方法*
 sort_values(by = "Title", ascending=True/False) | 给相应title排序，ascending=True为升序,False为降序
+*切片与索引*
+df[a:b] | 行索引操作
+df["title"] | 列索引操作
+df[a,b]["title"]  |同时行列索引操作 
+*loc优化选择方式(返回Series数据类型)*
+df.loc(["title"])  |  标签索引行数据 ex:df.loc["A", ["B", "C"]]
+df.iloc(a,b) |  位置获取行数据 
