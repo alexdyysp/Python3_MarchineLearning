@@ -125,7 +125,8 @@ s["index1","index2"] | 直接用索引表索引
 .where(condition) |  where方法，返回符合条件的序列部分<br>
   
   
-2. *read读取外部数据*
+2. *read读取外部数据*  
+
 function|用法
 ------|------
 panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
