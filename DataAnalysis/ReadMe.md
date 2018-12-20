@@ -116,7 +116,7 @@ function|用法
 .split("char")  | 根据分隔符char或正则表达式对字符串进行拆分
   
   
-1. *Series序列*
+1. *Series序列*<br>
 Series对象本质上由两个数组构成，一个构成对象的键(index)，一个构成对象的值(value)，index->value<br>
 常配合string一起使用<br>
 
@@ -134,14 +134,14 @@ s["index1","index2"] | 直接用索引表索引
 .where(condition) |  where方法，返回符合条件的序列部分<br>
   
   
-2. *read读取外部数据*  
+2. *read读取外部数据*  <br>
 
 function|用法
 ------|------
 panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
   
   
-3. *DataFrame*
+3. *DataFrame*<br>
 DataFrame二维数组对象，Series容器，有横竖轴，支持行索引&列索引<br>  
 一般用df指DataFrame型数据<br>  
 
@@ -173,7 +173,7 @@ df[df["title"]><=condition] | 取出符合条件值的df行列
 df[(condition)&(condition)] | 多个条件重合用&
 df["info"].str.split("/").tolist()  | 将"丁黑/孙俪/陈晓/何润东/剧情/古装/2017-08-30(中国大陆)"根据"/"做切割<br>.tolist把列表变成表格
 
-4. *缺失数据处理*
+4. *缺失数据处理*<br>
 数据缺失通常有两种情况：空/NaN/None和0<br>
 并不是所有的0都需要处理<br>
 计算平均值等情况，NaN不参与计算，但是0会<br>
