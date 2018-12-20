@@ -135,4 +135,18 @@ panda.read_csv("filepath") |  读取出的数据类型为DataFrame<br>
 DataFrame二维数组对象，Series容器，有横竖轴，支持行索引&列索引<br>
 function|用法
 ------|------
+*函数基本用法*
 .DataFrame(array, index=list(""), columns=list(""))   |  创建DataFrame对象索引, value=array, index行索引, colums列索引
+*DataFrame对象基础属性*
+df.shape  | 返回行数列数
+df.dtypes | 返回数据类型
+df.ndim   | 返回数据维度
+df.index  | 返回行索引
+df.columns| 返回列索引
+df.values | 返回对象值，二维ndarray数组
+*DataFrame整体情况查询*
+df.head(num)<br>df.tail(num)<br>  | 显示df的头/尾num行
+df.info() | 相关信息概览：行数，列数，列索引，列非空值个数，行类型，列类型，内存占用
+df.describe() | 快速综合统计结果：计数，均值，标准差，最大值，四分位数，最小值(只能统计数值型,int/folat)
+*DataFrame排序方法*
+sort_values(by = "Title", ascending=True/False) | 给相应title排序，ascending=True为升序,False为降序
