@@ -106,7 +106,8 @@ pandas可以处理字符串和时间序列等数据<br>
 (pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]<br>
 import panda as pd   #panda module导入<br>
   
-*字符串方法*
+*字符串方法*  
+
 function|用法
 ------|------
 .contains() | 返回表示字符串是否含有指定模式的布尔型数组
