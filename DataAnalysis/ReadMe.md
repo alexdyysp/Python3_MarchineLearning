@@ -196,12 +196,21 @@ function|用法
 dropna(axis=0,how='any',inplace=False) |  删除Nan所在行列
 array.fillna(array.mean())<br>array.fillna(array.median())<br>array.fillna(0) | 填充数据，平均值/中位数/0
   
-5. *数据合并*  
+5. *数据合并和分组*  
 
 function|用法
 ------|------
-*join*
+*join合并*
 df_1.join(df_2)  | join方法默认情况下把行行索引相同的数据合并在一起,NaN补全
-*merge*
+*merge合并*
 df.merge(df_m, left_on=" ", right_on=" ", how=" ")  | 以left_on/right_on为准<br>合并方式how的默认方式是inner并集<br>outer交集<br>left左边为准NaN补全<br>right右边为准NaN为准<br>
-
+*group分组*
+df.groupby(by="column name")  | 按列名分组，返回每一个元素是一个元祖，元组里是(索引(分组的值),分组之后的DataFrame),DataFrameGroupBy对象是可迭代的
+df["column name1"].groupby(by=[df["column name2"], df["column name3"]]).count() | 对某几列数据进行分组，计数name1，用name2和name3索引<br>返回值type=Series,多加一个[]可以使type变成DataFrame.  
+*DataFrameGroupBy对象优化操作*
+count | 分组中非NA值数量
+sum | 非NA值的和
+mean  | 非NA值平均值
+median  | 非NA值算数中位数
+std<br>var<br>  | 无偏标准差和方差
+min<br>max<br>  | 非NA值最小值和最大值
