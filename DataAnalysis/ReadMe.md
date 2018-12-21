@@ -9,9 +9,9 @@ Python3数据分析-2018黑马
 提出问题-准备数据-分析数据-获得结论-成果可视化
   
 主要到三大模块：  
-- 1. matplotlib
-- 2. numpy
-- 3. pandas  
+- 1 matplotlib
+- 2 numpy
+- 3 pandas  
 
   
 * *matplotlib module*
