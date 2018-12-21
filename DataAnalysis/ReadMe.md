@@ -196,7 +196,8 @@ function|用法
 dropna(axis=0,how='any',inplace=False) |  删除Nan所在行列
 array.fillna(array.mean())<br>array.fillna(array.median())<br>array.fillna(0) | 填充数据，平均值/中位数/0
   
-5. *数据合并*
+5. *数据合并*  
+
 function|用法
 ------|------
 *join*
