@@ -59,7 +59,7 @@ matplotlib.rc("font",**font)  |  enable 中文
 *展示图形类型函数*
 .plot(x,y,label,color,linestyle,linewidth,alpha)  |   折线图，传入x和y,label=""为曲线标签,color=""颜色，linestyle线条风格，alpha透明度<br>
 .scatter()     |  散点图<br>
-.bar()   |  条形图<br>
+.bar(range, data, width)   |  条形图<br>
 .hist(y,x,normed)  |  直方图,normed=1显示统计概率分布直方图<br>
 
   
@@ -195,3 +195,12 @@ function|用法
 .isnull(df)<br>.notnull(df) | 判断数据是否为NaN
 dropna(axis=0,how='any',inplace=False) |  删除Nan所在行列
 array.fillna(array.mean())<br>array.fillna(array.median())<br>array.fillna(0) | 填充数据，平均值/中位数/0
+  
+5. *数据合并*
+function|用法
+------|------
+*join*
+df_1.join(df_2)  | join方法默认情况下把行行索引相同的数据合并在一起,NaN补全
+*merge*
+df.merge(df_m, left_on=" ", right_on=" ", how=" ")  | 以left_on/right_on为准<br>合并方式how的默认方式是inner并集<br>outer交集<br>left左边为准NaN补全<br>right右边为准NaN为准<br>
+
