@@ -26,12 +26,17 @@ matplotlib.rc,查看源码<br>
 ---------
 想查看更多绘制图形，点击下面链接<br>
 [matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)<br>
-
-[还有ECHARTS前端框架,js效果](https://github.com/apache/incubator-echarts)<by>
-
+[ECHARTS前端框架,js效果](https://github.com/apache/incubator-echarts)<by>
 [ployly.py，在后端直接绘图不用传给前端](https://plotly.ly/python/)<br>
+seaborn<br>  
+  
+*基本流程：*
+ - 1. set two group of x,y axis
+ - 2. set figure size
+ - 3. set x axis 
+ - 4. set describe
+ - 5. display figure
 
-seaborn<br>
 
 function|用法
 ------|------
@@ -135,7 +140,7 @@ s["index1","index2"] | 直接用索引表索引
 .where(condition) |  where方法，返回符合条件的序列部分<br>
   
   
-2. *read读取外部数据*  <br>
+2. *read_csv读取外部数据*  <br>
 
 function|用法
 ------|------
