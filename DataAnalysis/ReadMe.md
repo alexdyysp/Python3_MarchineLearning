@@ -14,7 +14,7 @@ Python3数据分析-2018黑马
 - 3 pandas  
 
   
-* *matplotlib module*
+Matplotlib Module
 ----------------------
 最流行Python的底层绘图库<br>
 基本要点:<br>
@@ -27,7 +27,7 @@ matplotlib.rc,查看源码<br>
    fontproperties=my_font<br>
   
   
-*pyplot*
+* *pyplot*
 ---------
 想查看更多绘制图形，点击下面链接<br>
 [matplotlib.pyloy画图图例](https://matplotlib.org/gallery/)<br>
@@ -64,7 +64,7 @@ matplotlib.rc("font",**font)  |  enable 中文
 
   
   
-* *numpy Module*
+Numpy Module
 -----------------
 专门用于处理数值形数据<br>
 概念:<br>
@@ -111,7 +111,8 @@ a = b.copy()   |  轻拷贝，ab不相互影响
 .isnan(num)<br>.isnan(array)   |  求num是否为nan<br>返回bool型数组在nan位置标True<br>
   
   
-* *pandas Module*
+Pandas Module
+------------------
 pandas可以处理字符串和时间序列等数据<br>
 (pandas官网，很全面的case)[http://pandas.pydata.org/pandas-docs/stable/]<br>
 import panda as pd   #panda module导入<br>
