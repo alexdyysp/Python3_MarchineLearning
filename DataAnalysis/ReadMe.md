@@ -173,6 +173,13 @@ df.info() | 相关信息概览：行数，列数，列索引，列非空值个�
 df.describe() | 快速综合统计结果：计数，均值，标准差，最大值，四分位数，最小值(只能统计数值型,int/folat)
 *DataFrame排序方法*
 sort_values(by = "Title", ascending=True/False) | 给相应title排序，ascending=True为升序,False为降序
+*简单索引*
+df.index  | 获取index
+df.index = ['X','Y']  | 指定index
+df.reindex(list("abcd"))  | 重新设置list为index，不改变原索引
+df.set_index("column name",drop=False)  | 指定某一行作为index
+df.ser_index("column name",drop=False).index.unique()  |  返回index的唯一值 
+df.swaplevel()["column name"] | 从内层开始索引
 *切片与索引*
 df[a:b] | 行索引操作
 df["title"] | 列索引操作
