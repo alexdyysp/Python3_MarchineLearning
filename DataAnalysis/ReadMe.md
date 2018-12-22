@@ -221,3 +221,12 @@ mean  | 非NA值平均值
 median  | 非NA值算数中位数
 std<br>var<br>  | 无偏标准差和方差
 min<br>max<br>  | 非NA值最小值和最大值
+  
+6. *时间序列处理*  
+  
+function|用法
+------|------
+*生成时间序列*
+pd.data_range(start="", end="",periods="", freq="") | start和end以及freq配合能够生成start和end范围内以频率freq的一组时间索引<br>start和periods以及freq配合能生成从start开始的频率为freq的periods个时间索引<br>
+*重采样*
+df.resample("freq")  | 将时间序列从一个频率转化为另一个频率进行处理的过程，将高频率数据转化为低频率数据为降采样，低频率转化为高频率为升采样
