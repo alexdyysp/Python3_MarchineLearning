@@ -45,8 +45,8 @@ scikit-learn库介绍<br>
 - sklearn.feature_extravtion  api
 <br>
 *数据特征预处理*<br>
-function  | 作用<br>
-----------|-----------
+|function  | 作用 |
+|----------|-----------|
 *sklearn.feature_extravtion.DictVectorizer  对字典数据进行特征值化*
 DictVectorizer.fit_transform(X) | X:字典或者包含字典的迭代器；返回值：返回sparse矩阵
 DictVectorizer.get_feature_names()  | 返回类别名称
