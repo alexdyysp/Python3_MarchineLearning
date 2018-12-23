@@ -45,7 +45,7 @@ scikit-learn库介绍<br>
 - sklearn.feature_extravtion  api
 <br>
 *数据特征预处理* <br>
-<br>
+    
 |function  | 作用 |
 |----------|-----------|
 |*sklearn.feature_extravtion.DictVectorizer  对字典数据进行特征值化*|
