@@ -58,9 +58,9 @@ scikit-learn库介绍<br>
 |*jieba 分词*|
 |jieba.cut(X)  | 返回值：词语生成器|
 <br>
-文本特征值化流程：
-- 1. 准备句子，jieba分词
-- 2. 实例化CountVectorizer
-- 3. 将分词结果变成字符串当做fit_transform的输入值
+文本特征值化流程：<br>
+- 1.准备句子，jieba分词
+- 2.实例化CountVectorizer
+- 3.将分词结果变成字符串当做fit_transform的输入值
   
 *数据降维*
