@@ -44,7 +44,6 @@ scikit-learn库介绍<br>
 - 特征对文本等数据进行特征值化<br>
 - sklearn.feature_extravtion  api
 <br>
-*数据特征预处理* <br>
     
 |function  | 作用 |
 |----------|-----------|
