@@ -47,15 +47,15 @@ scikit-learn库介绍<br>
 *数据特征预处理*
 function  | 作用
 ----------|-----------
-*sklearn.feature_extravtion.DictVectorizer*  对字典数据进行特征值化
+*sklearn.feature_extravtion.DictVectorizer  对字典数据进行特征值化*
 DictVectorizer.fit_transform(X) | X:字典或者包含字典的迭代器；返回值：返回sparse矩阵
 DictVectorizer.get_feature_names()  | 返回类别名称
 DictVectorizer.transorm(X)  | 按照原先标准转换
-*sklearn.feature_extravtion.text.CountVectorizer*  文本数据特征值化
+*sklearn.feature_extravtion.text.CountVectorizer  文本数据特征值化*
 CountVectorizer.fit_transform(X) | X:文本或者包含文本的迭代器；返回值：返回sparse矩阵
 CountVectorizer.get_feature_names()  | 返回值：单词列表
 CountVectorizer.inverse_transorm(X)  |  X:array或者sparse矩阵；返回值:转换之前数据格式
-*jieba* 分词
+*jieba 分词*
 jieba.cut(X)  | 返回值：词语生成器
 
 文本特征值化流程：<br>
