@@ -57,7 +57,7 @@ CountVectorizer.get_feature_names()  | 返回值：单词列表
 CountVectorizer.inverse_transorm(X)  |  X:array或者sparse矩阵；返回值:转换之前数据格式
 *jieba 分词*
 jieba.cut(X)  | 返回值：词语生成器
-
+<br>
 文本特征值化流程：<br>
 - 1 准备句子，jieba分词
 - 2 实例化CountVectorizer
