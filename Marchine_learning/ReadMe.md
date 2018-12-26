@@ -82,6 +82,4 @@ scikit-learn库介绍<br>
 1、减少正例的数量，使得数据平衡，再进一步分类，这种情况属于`欠采样`；<br>
 2、增加反例的数目平衡数据，再分类，这种称为`过采样`；<br>
 3、`阈值移动`：直接使用原始数据进行分类，但在用训练好的分类器进行预测时，将下式加入到决策过程中，以调整正反例的平衡性。<br>
-$$
-\cfrac{y{^'}}{1 - y{^'}} = \cfrac{y}{1-y} * \cfrac{m{^-}}{m{^+}}
-$$
+![image](https://github.com/dyywinner/Python3_MarchineLearning/edit/master/images/nongshalie.jpg)
