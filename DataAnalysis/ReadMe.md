@@ -87,6 +87,8 @@ function|用法
 .random.randn(d0,d1,...,dn)  |  创建d0-dn维度的*标准正态*分布随机数据库，average=0,标准差s=1
 .random.randint(low,high,(shape)) |  给定上限范围选取随机数整数，(low,high),size=shape
 .random.seed(n)   |  随机种子，给定n个随机值，可以让后续每次生成相应的随机数
+.random.shuffle(arry) | 现场修改序列，改变array自身内容.（类似洗牌，打乱顺序）
+.random..permutation(arry) |  返回一个随机排列
 *直接数组操作*
 array+-*/value |  给数组全体进行四则运算
 array.astype(elementype)   |  array转换类型，默认为float
