@@ -84,5 +84,5 @@ scikit-learn库介绍<br>
 2、增加反例的数目平衡数据，再分类，这种称为`过采样`；<br>
 3、`阈值移动`：直接使用原始数据进行分类，但在用训练好的分类器进行预测时，将下式加入到决策过程中，以调整正反例的平衡性。<br>
 ![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/%E9%98%88%E5%80%BC%E7%A7%BB%E5%8A%A8.png)
-<br>
+
 将数据集切分成两部分：train集(80%)和test集(20%)<br>
