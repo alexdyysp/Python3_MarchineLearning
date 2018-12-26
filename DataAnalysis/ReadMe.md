@@ -167,6 +167,7 @@ df.ndim   | 返回数据维度
 df.index  | 返回行索引
 df.columns| 返回列索引
 df.values | 返回对象值，二维ndarray数组
+df.insert(loc, column, value, allow_duplicates=False) | 添加一项数据
 *DataFrame整体情况查询*
 df.head(num)<br>df.tail(num)<br>  | 显示df的头/尾num行
 df.info() | 相关信息概览：行数，列数，列索引，列非空值个数，行类型，列类型，内存占用
