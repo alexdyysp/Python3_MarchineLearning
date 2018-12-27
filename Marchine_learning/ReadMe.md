@@ -87,3 +87,5 @@ scikit-learn库介绍<br>
 ![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/Threshold_shift.png)　　
 
 将数据集切分成两部分：train集(80%)和test集(20%)<br>
+<br>
+*交叉验证*:<br>
