@@ -108,4 +108,4 @@ L1：abs(w)<br>
 L2: loss+1/2*w^2<br>
   
 *混淆矩阵*<br>
-![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/Threshold_shift.png)　　
+![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/ConfusionMatrix.png)　　
