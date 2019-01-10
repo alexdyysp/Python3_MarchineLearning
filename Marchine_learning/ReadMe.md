@@ -76,7 +76,7 @@ scikit-learn库介绍<br>
 
 逻辑回归
 --------  
-<br>
+
 *样本类别不平衡*
 在分类问题中，有存在正反例数目差异较大的情况，这种情况叫做类别不平衡<br>
 针对这种问题，解决方式主要有3种：假设正例数量大，反例数目极小<br>
@@ -99,5 +99,13 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_
 
 Recall  | 相关(Relevant)正类 | 无关(NonRelevent)负类
 ----------|-----------|----------------
-被检索到(Retrieved) | TruePositives(TP 正类判定为正类，就是正确的判定) | FalsePositive(FP 负类判定正类，”存伪“)
-未被检索到(NotRetrieved) | FalseNegitives(FN 正类判定为负类“去真”) | TrueNegatives(TN 负类判定为负类)
+被检索到(Retrieved) | TruePositives(TP 正类判定为正类，正例) | FalsePositive(FP 负类判定正类，”存伪“)
+未被检索到(NotRetrieved) | FalseNegitives(FN 正类判定为负类“去真”) | TrueNegatives(TN 负类判定为负类，正例)
+Recall = TP/(TP+FN)<br>
+
+*正则化惩罚*<br>
+L1：abs(w)<br>
+L2: loss+1/2*w^2<br>
+  
+*混淆矩阵*<br>
+![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/Threshold_shift.png)　　
