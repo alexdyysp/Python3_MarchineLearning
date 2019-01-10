@@ -91,5 +91,12 @@ scikit-learn库介绍<br>
 *交叉验证*:<br>
 切分数据集成train和test集。比如把train集分成123三部分，1+2->3,1+3->2,2+3->1,三部分数据集互相验证模型，取消错误或者偏差数据对模型的影响<br>
 ```python
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_state = 0)<br>
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_state = 0)
 ```
+*模型评估方法*<br>
+1.用精度评估(略微骗人)<br>
+2.用recall召回率评估(更常用):<br>
+Recall  | 相关(Relevant)正类 | 无关(NonRelevent)负类
+----------|-----------|----------------
+被检索到(Retrieved) | TruePositives(TP 正类判定为正类，就是正确的判定) | FalsePositive(FP 负类判定正类，”存伪“)
+未被检索到(NotRetrieved) | FalseNegitives(FN 正类判定为负类“去真”) | TrueNegatives(TN 负类判定为负类)
