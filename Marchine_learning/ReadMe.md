@@ -89,3 +89,7 @@ scikit-learn库介绍<br>
 将数据集切分成两部分：train集(80%)和test集(20%)<br>
 <br>
 *交叉验证*:<br>
+切分数据集成train和test集。比如把train集分成123三部分，1+2->3,1+3->2,2+3->1,三部分数据集互相验证模型，取消错误或者偏差数据对模型的影响<br>
+```python
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_state = 0)<br>
+```
