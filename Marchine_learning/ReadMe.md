@@ -96,6 +96,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_
 *模型评估方法*<br>
 1.用精度评估(略微骗人)<br>
 2.用recall召回率评估(更常用):<br>
+
 Recall  | 相关(Relevant)正类 | 无关(NonRelevent)负类
 ----------|-----------|----------------
 被检索到(Retrieved) | TruePositives(TP 正类判定为正类，就是正确的判定) | FalsePositive(FP 负类判定正类，”存伪“)
