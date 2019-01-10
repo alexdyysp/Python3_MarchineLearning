@@ -91,6 +91,8 @@ scikit-learn库介绍<br>
 *交叉验证*:<br>
 切分数据集成train和test集。比如把train集分成123三部分，1+2->3,1+3->2,2+3->1,三部分数据集互相验证模型，取消错误或者偏差数据对模型的影响<br>
 ```python
+from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_state = 0)
 ```
 *模型评估方法*<br>
@@ -100,7 +102,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.3, random_
 Recall  | 相关(Relevant)正类 | 无关(NonRelevent)负类
 ----------|-----------|----------------
 被检索到(Retrieved) | TruePositives(TP 正类判定为正类，正例) | FalsePositive(FP 负类判定正类，”存伪“)
-未被检索到(NotRetrieved) | FalseNegitives(FN 正类判定为负类“去真”) | TrueNegatives(TN 负类判定为负类，正例)
+未被检索到(NotRetrieved) | FalseNegitives(FN 正类判定为负类“误杀”) | TrueNegatives(TN 负类判定为负类，正例)
 Recall = TP/(TP+FN)<br>
 
 *正则化惩罚*<br>
@@ -109,3 +111,10 @@ L2: loss+1/2*w^2<br>
   
 *混淆矩阵*<br>
 ![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/ConfusionMatrix.png)　　
+在下采样数据集下测试，在整个数据集上测试<br>
+  
+*调整阈值对Logistic回归模型的影响*<br>
+  
+*过采样SMOTE算法*<br>
+from imblearn.over_sampling import SMOTE # 过采样模块<br>
+
