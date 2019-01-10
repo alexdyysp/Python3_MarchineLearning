@@ -110,7 +110,7 @@ L1：abs(w)<br>
 L2: loss+1/2*w^2<br>
   
 *混淆矩阵*<br>
-![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/ConfusionMatrix.png)　　
+![image](https://github.com/dyywinner/Python3_MarchineLearning/blob/master/image/ConfusionMatrix.png)  
 在下采样数据集下测试，在整个数据集上测试<br>
   
 *调整阈值对Logistic回归模型的影响*<br>
