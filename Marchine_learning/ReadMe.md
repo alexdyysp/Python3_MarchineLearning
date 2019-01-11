@@ -120,7 +120,10 @@ from imblearn.over_sampling import SMOTE # 过采样模块<br>
 
 决策树
 ------
-
+```python
+from sklearn import tree
+dtr = tree.DecisionTreeRegressor(parament) # 实例化决策树方法(参数)
+```
 *树模型参数:*
 
 -  1.criterion  gini  or  entropy 用什么作为衡量标准：gini系数或者熵
