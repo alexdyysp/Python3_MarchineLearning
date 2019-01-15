@@ -148,4 +148,5 @@ dtr = tree.DecisionTreeRegressor(parament) # 实例化决策树方法(参数)
 
 - 10.min_impurity_split 这个值限制了决策树的增长，如果某节点的不纯度(基尼系数，信息增益，均方差，绝对差)小于这个阈值则该节点不再生成子节点。即为叶子节点 。
 - n_estimators:要建立树的个数
-
+<br>
+sklearn中画决策树，使用graphviz+pydotlus.<br>
