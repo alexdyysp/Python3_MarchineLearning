@@ -150,3 +150,14 @@ dtr = tree.DecisionTreeRegressor(parament) # 实例化决策树方法(参数)
 - n_estimators:要建立树的个数
 <br>
 sklearn中画决策树，使用graphviz+pydotlus.<br>
+
+Xgboost
+--------
+测试GPU,分别执行<br>
+```python
+    python benchmark.py --tree_method gpu_hist
+    python benchmark.py --tree_method hist
+    python benchmark.py --tree_method gpu_exact
+    python benchmark.py --tree_method exact
+```
+*xgboost调参*
