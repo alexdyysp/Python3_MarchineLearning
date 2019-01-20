@@ -155,7 +155,8 @@ Xgboost
 --------  
 [中文文档地址：](http://xgboost.apachecn.org/cn/latest/)
 [英文文档地址：](http://xgboost.apachecn.org/en/latest/)
-[中文文档 GitHub 地址：](https://github.com/apachecn/xgboost-doc-zh)
+[中文文档 GitHub 地址：](https://github.com/apachecn/xgboost-doc-zh)  
+[xgboost链接github](https://github.com/dmlc/xgboost)
 
 测试GPU,分别执行<br>
 ```python
