@@ -152,7 +152,11 @@ dtr = tree.DecisionTreeRegressor(parament) # 实例化决策树方法(参数)
 sklearn中画决策树，使用graphviz+pydotlus.<br>
 
 Xgboost
---------
+--------  
+[中文文档地址：](http://xgboost.apachecn.org/cn/latest/)
+[英文文档地址：](http://xgboost.apachecn.org/en/latest/)
+[中文文档 GitHub 地址：](https://github.com/apachecn/xgboost-doc-zh)
+
 测试GPU,分别执行<br>
 ```python
     python benchmark.py --tree_method gpu_hist
