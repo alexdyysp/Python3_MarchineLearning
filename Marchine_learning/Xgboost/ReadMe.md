@@ -29,5 +29,5 @@ Xgboost参数:
 - 'nthread':7, cpu 线程数
 - #GPU相关参数,GTX950M
 - 'gpu_id': 0,
-- 'max_bin': 64,
+- 'max_bin': 128, #128可以占用1688M GPU内存
 - 'tree_method': 'gpu_hist',
