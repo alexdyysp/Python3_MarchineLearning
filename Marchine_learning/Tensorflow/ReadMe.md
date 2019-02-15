@@ -11,3 +11,8 @@ tensorflow属于计算密集型框架:
 - 6  自定义命令行参数
 
 operation: 运算操作节点，所有操作是一个op
+
+图：图默已经注册，一组表示tf.operation计算单位的对象和tf.Tensor表示操作之间流动的数据单元的对象.
+获取调用：
+- tf.default_graph()
+- op, sess, tensor的graph属性
