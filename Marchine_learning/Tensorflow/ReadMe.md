@@ -36,3 +36,16 @@ tensorflow由前段和后端：
 - 数据序列化-events文件
 - 启动TensorBoard
 - 节点符号
+
+计算节点保存与加载:
+- tf.train.Saver()
+- saver.load()
+
+文件流队列：
+- tf.FIFOQueue()
+- tf.train.QueueRunner() 队列管理器
+- tf.train.Coordinator() 线程协调器
+- 1 构造文件队列
+- 2 读取队列内容
+- 3 读取队列内容中一个样本的内容
+- 4 批处理
