@@ -41,11 +41,12 @@ tensorflow由前段和后端：
 - tf.train.Saver()
 - saver.load()
 
-文件流队列：
+IO流队列：
 - tf.FIFOQueue()
 - tf.train.QueueRunner() 队列管理器
 - tf.train.Coordinator() 线程协调器
-- 1 构造文件队列
-- 2 读取队列内容
-- 3 读取队列内容中一个样本的内容
+文件读取队列：
+- 1 构造文件队列 tf.train.string_input_producer()
+- 2 读取队列内容 tf.TextLineReader/tf.FixedLengthRecordReader/tf.TFRecordReader 
+- 3 读取队列内容中一个样本的内容 tf.decode_csv()/tf.decode_raw()
 - 4 批处理
