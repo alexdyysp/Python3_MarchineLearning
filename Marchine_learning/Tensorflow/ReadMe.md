@@ -50,3 +50,6 @@ IO流队列：
 - 2 读取队列内容 tf.TextLineReader/tf.FixedLengthRecordReader/tf.TFRecordReader 
 - 3 读取队列内容中一个样本的内容 tf.decode_csv()/tf.decode_raw()
 - 4 批处理
+图像读取：
+- [长，宽，通道]
+- 缩小图片 tf.image.resize_images()
