@@ -53,3 +53,8 @@ IO流队列：
 图像读取：
 - [长，宽，通道]
 - 缩小图片 tf.image.resize_images()
+
+神经网络APImodule:
+- 1 tf.nn: 卷积conv, 池化pooling, 归一化, loss, 分类, embeding, RNN, evaluation
+- 2 tf.layers: 高层神经网络, 主要和卷积相关, 对tf.nn进一步封装
+- 3 tf.contrib: tf.contrib.layers 提供计算图中的网络层，正则化，摘要操作，是构建计算图的高级操作
