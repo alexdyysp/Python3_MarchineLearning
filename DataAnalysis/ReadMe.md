@@ -190,6 +190,7 @@ df[a,b]["title"]  |同时行列索引操作
 *loc优化选择方式(返回Series数据类型)*
 df.loc(["title"])  |  标签索引行数据 ex:df.loc["A", ["B", "C"]]
 df.iloc(a,b) |  位置获取行数据 
+df[~df[columns].isin([1])] | 通过使用反取~符号选取不包含数字1的行
 *布尔索引*
 df[df["title"]><=condition] | 取出符合条件值的df行列
 df[(condition)&(condition)] | 多个条件重合用&
