@@ -8,7 +8,7 @@ Python3数据分析-2018
 数据分析的流程?<br>
 提出问题-准备数据-分析数据-获得结论-成果可视化
   
-主要到三大模块：  
+主要用到三大模块：  
 - 1 matplotlib
 - 2 numpy
 - 3 pandas  
@@ -19,7 +19,10 @@ Matplotlib Module
 最流行Python的底层绘图库<br>
 基本要点:<br>
 axis轴:xy坐标轴
-默认不支持中文，使用fc-list :lang=zh查看支持字体<br>
+默认不支持中文，使用命令行输入下文代码查看支持字体：
+```
+fc-list :lang=zh  
+```
 matplotlib.rc,查看源码<br>
 1. font = {'family':'MicroSoft Yahei','weight':'bold','size':'larger'}<br>
    matplotlib.rc("font",**font)<br>
