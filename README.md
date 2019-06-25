@@ -7,3 +7,4 @@
 - 开启图形界面 sudo systemctl set-default graphical.target sudo reboot
 - nvidia-smi
 **Note**: 重装无数次，搞崩无数次得来的经验
+- 万一装完黑屏，进入grub中recovery mode,等待进入命令行，sudo apt-get purge nvidia*,卸载驱动再重启
